@@ -2,8 +2,7 @@
     "version": 2,
     "builds": [
       {
-        "src": "/(.*)",
-        "dest": "server/loanfalcon/index.js",
+        "src": "server/loanfalcon/index.js",
         "use": "@vercel/node"
       }
     ],
