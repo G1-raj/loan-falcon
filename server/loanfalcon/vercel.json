@@ -2,14 +2,15 @@
     "version": 2,
     "builds": [
       {
-        "src": "server/loanfalcon/index.js",
+        "src": "/(.*)",
+        "dest": "server/loanfalcon/index.js",
         "use": "@vercel/node"
       }
     ],
 
     "routes": [
       {
-        "src": "/api/.*",
+        "src": "/(.*)",
         "dest": "server/loanfalcon/index.js"
       }
     ]
